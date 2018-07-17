@@ -8,7 +8,7 @@ Query and Download 'Rapid7' Cybersecurity Data Sets
 
 ## Description
 
-'Rapid7' collects cybersecurity data and makes it available via their 'Open Data' <opendata.rapid7.com> portal which has an 'API'. Tools are provided to assist in querying for available data sets and downloading any data set authorized to a registered account.
+'Rapid7' collects cybersecurity data and makes it available via their 'Open Data' <https://opendata.rapid7.com> portal which has an 'API'. Tools are provided to assist in querying for available data sets and downloading any data set authorized to a registered account.
     
 ## What's Inside The Tin
 
@@ -33,9 +33,27 @@ options(width=120)
 
 ```{r message=FALSE, warning=FALSE, error=FALSE}
 library(ropendata)
+library(tidyverse)
 
 # current verison
 packageVersion("ropendata")
 
 ```
 
+### List Studies
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+list_studies()
+```
+
+### Get Study Details
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+get_study_details("sonar.national_exposure")
+```
+
+### Get Details About A Single Study File
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+get_file_details("sonar.fdns_v2", "2018-06-15-1529049662-fdns_aaaa.json.gz")
+```
