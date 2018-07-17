@@ -33,7 +33,7 @@ The following functions are implemented:
 ## Installation
 
 ``` r
-devtools::install_github("brudis-47/ropendata")
+devtools::install_github("brudis-r7/ropendata")
 ```
 
 ## Usage
