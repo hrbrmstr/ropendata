@@ -12,12 +12,11 @@ provided to assist in querying for available data sets and downloading any
 data set authorized to a registered account.
 }
 \details{
-You will need to request a free account on Open Data (do that by going to an
-individual study and use the link there to request an account) and then
-navigate to the "Open Data API" link there to create both an organizational
-key and a user key. You can only use \strong{user keys} with the Open Data API and
-you will receive error messages indicating so if you try to use an
-organizational key.
+You will need to request a free account on Open Data via
+\url{https://opendata.rapid7.com/#register} and then navigate to the "Open Data API"
+link there to create both an organizational key and a user key. You can only
+use \strong{user keys} with the Open Data API and you will receive error messages
+indicating so if you try to use an organizational key.
 }
 \author{
 Bob Rudis (bob_rudis@rapid7.com)

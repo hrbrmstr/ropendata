@@ -14,6 +14,12 @@
 #' these examples to work correctly, this default key must exist with all the permissions,
 #' otherwise the usage examples may result in a 401 Unauthorized error.
 #'
+#' You need a Rapid7 account to get an API key. You can request a free account via
+#' <https://opendata.rapid7.com/#register> and then navigate to the "Open Data API"
+#' link there to create both an organizational key and a user key. You can only
+#' use **user keys** with the Open Data API and you will receive error messages
+#' indicating so if you try to use an organizational key.
+#'
 #' @note As the API documentation says, you need a **User** key vs an **Org** key.
 #' @param force Force setting a new Rapid7 Open Data API key for the current environment?
 #' @return atomic character vector containing the Rapid7 Open Data API key
