@@ -1,0 +1,41 @@
+---
+output: rmarkdown::github_document
+---
+
+# ropendata
+
+Query and Download 'Rapid7' Cybersecurity Data Sets
+
+## Description
+
+'Rapid7' collects cybersecurity data and makes it available via their 'Open Data' <opendata.rapid7.com> portal which has an 'API'. Tools are provided to assist in querying for available data sets and downloading any data set authorized to a registered account.
+    
+## What's Inside The Tin
+
+The following functions are implemented:
+
+- `get_file_details`:	Retrieve details for a given file from a specific Rapid7 Open Data study
+- `get_study_details`:	Retrieve details for a specific Rapid7 Open Data study
+- `list_studies`:	List available Rapid7 Cybersecurity Studies
+- `rapid7_api_key`:	Get or set `RAPID7_OPENDATA_API_KEY` value
+
+## Installation
+
+```{r eval=FALSE}
+devtools::install_github("brudis-47/ropendata")
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE, include=FALSE}
+options(width=120)
+```
+
+## Usage
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+library(ropendata)
+
+# current verison
+packageVersion("ropendata")
+
+```
+
